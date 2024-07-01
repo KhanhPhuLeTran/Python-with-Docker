@@ -1,71 +1,41 @@
-# Python-with-Docker
-## Directory Structure
+# Research Topic: Predicting Smartphone Product Reviews from User Comments on E-commerce Platforms
 
-Ensure the `python_app` directory contains the following files:
-```
-python_app/
-├── balanced_df.csv 
-├── maxent_model.pkl 
-├── stopword_train.txt 
-├── teencode.xlsx 
-```
+## Introduction
 
-## Steps to Deploy
+Our group focuses on researching and developing a tool to predict smartphone product reviews based on user comments on e-commerce platforms. This topic aims to study how users interact and evaluate smartphones through comments, utilizing the UIT-ViSFD dataset.
 
-### 1. Navigate to the python_app Directory
+## Research Objectives
 
-Open the terminal and navigate to the `python_app` directory:
-```powershell
-PS D:\Docker\python_app> cd D:\Docker\python_app
-```
+The ultimate goal of our research is to create a tool to predict reviews from the UIT-ViSFD dataset. We hope this study will contribute to a deeper understanding of user interactions with products on e-commerce platforms and provide a foundation for developing business strategies based on customer feedback.
 
-### 2. Build the Docker Image
+## Research Methods
 
-Create a Docker image from the `Dockerfile` in the current directory:
-```powershell
-PS D:\Docker\python_app> docker build -t pythonapp .
-```
+- **Algorithms:**
+  - Logistics Regression for Maxent Model
+  - Naive Bayes for Machine Learning
+  - Long short-term memory for Deep Learning
 
-### 3. Verify Docker Image Creation
+- **Text Representation Method:**
+  - Term Frequency-Inverse Document Frequency (TF-IDF)
 
-Check if the Docker image `pythonapp` has been created:
-```powershell
-PS D:\Docker\python_app> docker images
-```
+- **Data Balancing Methods:**
+  - Undersampling
+  - RandomOverSampler
 
-### 4. Run a Docker Container
+- **Types of Charts:**
+  - Using appropriate charts to visualize data for clarity and ease of comparison.
 
-Create and run a Docker container from the `pythonapp` image, mapping port 7860 of the host to port 7860 of the container:
-```powershell
-PS D:\Docker\python_app> docker run -it -p 7860:7860 pythonapp
-```
+## Resources Used
 
-### 5. Verify Docker Container
+- **Programming Language:**
+  - Python
 
-Check if the Docker container is running:
-```powershell
-PS D:\Docker\python_app> docker ps
-```
+- **Dataset:**
+  - UIT-ViSFD dataset on user feedback regarding smartphone products.
 
-### 6. Access and Test the Application Locally
+- **Teencode List:**
+  - Obtained from Nguyen Van Hieu's GitHub to aid in translating comments.
+  - [Teencode List on GitHub](https://gist.github.com/nguyenvanhieuvn/7d9441c10b3c2739499fc5a4d9ea06fb)
 
-Open a web browser and access the application using the following URL:
-```
-http://localhost:7860
-```
-Or:
-```
-http://127.0.0.1:7860
-```
-
-### 7. Access and Test the Application Publicly
-
-If a public URL is provided, you can also access the application using the following link:
-```
-https://9950d45d07602283f0.gradio.live
-```
-Opening this link in a browser should display the application's interface.
-
----
-
-This README provides detailed instructions for deploying and testing the `python_app` application using Docker.
+- **Stopword List:**
+  - Source: vnstopword.txt | Powered by Box
