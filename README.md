@@ -66,5 +66,7 @@ If a public URL is provided, you can also access the application using the follo
 https://9950d45d07602283f0.gradio.live
 ```
 Opening this link in a browser should display the application's interface.
+![image](https://github.com/user-attachments/assets/1d31941e-4661-4e5a-8cf2-b65420a5318d)
+![image](https://github.com/user-attachments/assets/fcb23367-f1a6-4f2b-bdfb-a6a36da89fa2)
 
 ---
