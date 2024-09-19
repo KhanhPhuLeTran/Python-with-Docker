@@ -57,6 +57,7 @@ Or:
 ```
 http://127.0.0.1:7860
 ```
+![image](https://github.com/user-attachments/assets/cba6bcf6-6101-426f-b976-db73ca1f7051)
 
 ### 7. Access and Test the Application Publicly
 
@@ -67,5 +68,3 @@ https://9950d45d07602283f0.gradio.live
 Opening this link in a browser should display the application's interface.
 
 ---
-
-This README provides detailed instructions for deploying and testing the `python_app` application using Docker.
